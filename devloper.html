@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+<title>Elicen — Developer</title>
+
+<link
+  rel="stylesheet"
+  href="style.css">
+
+<style>
+
+.developerPage {
+  max-width: 950px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.devLogo {
+  width: 130px;
+  height: 130px;
+  margin: auto auto 25px;
+  padding: 5px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  background: var(--card);
+}
+
+.devLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.developerPage h1 {
+  font-size: clamp(45px,8vw,80px);
+  letter-spacing: -5px;
+  margin: 15px 0;
+}
+
+.developerPage h1 span {
+  color: #a78bfa;
+}
+
+.devIntro {
+  max-width: 650px;
+  margin: auto;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.devCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.devCard {
+  padding: 25px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 17px;
+}
+
+.devCard.full {
+  grid-column: 1/-1;
+}
+
+.devCard small {
+  color: #a78bfa;
+  letter-spacing: 2px;
+}
+
+.devCard h2 {
+  margin: 8px 0;
+}
+
+.devCard p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.insta {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background: var(--card2);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+}
+
+.insta:hover {
+  border-color: #8b5cf6;
+}
+
+@media(max-width:700px) {
+
+  .devCards {
+    grid-template-columns: 1fr;
+  }
+
+  .devCard.full {
+    grid-column: auto;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+  <a
+    class="logo"
+    href="index.html">
+
+    <img
+      src="image.png">
+
+    <div>
+      <strong>Elicen</strong>
+      <small>API VAULT</small>
+    </div>
+
+  </a>
+
+  <div class="topActions">
+
+    <a href="index.html">
+      API Directory
+    </a>
+
+    <a
+      target="_blank"
+      href="https://www.instagram.com/elicen_furios?igsi=d3NiNTMwZGF1MnZj">
+
+      Instagram
+
+    </a>
+
+  </div>
+
+</header>
+
+
+<main class="developerPage">
+
+  <div class="devLogo">
+
+    <img
+      src="image2.png"
+      alt="Developer">
+
+  </div>
+
+  <div class="eyebrow">
+    THE DEVELOPER
+  </div>
+
+  <h1>
+    Built by
+    <span>Elicen.</span>
+  </h1>
+
+  <p class="devIntro">
+
+    Welcome to Elicen API Vault.
+    This is your developer page.
+    You can replace this text with
+    your own bio, skills, projects
+    and portfolio information.
+
+  </p>
+
+
+  <div class="devCards">
+
+    <article class="devCard">
+
+      <small>PROFILE</small>
+
+      <h2>Elicen</h2>
+
+      <p>
+        Add your introduction,
+        development skills and
+        personal information here.
+      </p>
+
+    </article>
+
+
+    <article class="devCard">
+
+      <small>PROJECT</small>
+
+      <h2>API Vault</h2>
+
+      <p>
+        A modern public API directory
+        with search, categories,
+        favorites, API details,
+        pagination and API testing.
+      </p>
+
+    </article>
+
+
+    <article class="devCard full">
+
+      <small>CONTACT</small>
+
+      <h2>Connect with me</h2>
+
+      <a
+        class="insta"
+        target="_blank"
+        href="https://www.instagram.com/elicen_furios?igsi=d3NiNTMwZGFuMnZj">
+
+        <span>
+          Instagram — @elicen_furios
+        </span>
+
+        <b>↗</b>
+
+      </a>
+
+    </article>
+
+  </div>
+
+</main>
+
+</body>
+</html>
